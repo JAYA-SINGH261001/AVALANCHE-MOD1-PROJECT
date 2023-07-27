@@ -49,6 +49,6 @@ If you find any issues or have suggestions for improvements, feel free to open a
 
 ---
 
-Please note that the content in this readme file assumes that the contract code provided in the question is correct and safe to use. Always ensure that your smart contracts are thoroughly tested and audited before deploying them to a production blockchain network. Additionally, consider using the latest version of Solidity and keeping up with best practices and security standards.
+
 ### Author 
 Jaya Singh
