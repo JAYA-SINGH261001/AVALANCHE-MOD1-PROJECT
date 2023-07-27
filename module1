@@ -1,0 +1,26 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract ErrorExamples {
+    uint256 public value;
+
+    function requireFunction(uint256 _input) public {
+        // 'require' checks a condition and throws an error if it fails
+        require(_input > 0, "Input must be greater than zero");
+        value = _input;
+    }
+
+    function assertFunction(uint256 _input) public {
+        // 'assert' checks a condition and throws an error if it fails.
+        assert(_input > 0);
+        value = _input;
+    }
+
+    function revertFunction(uint256 _input) public {
+        // 'revert' immediately terminates execution and reverts all changes if the condition is not met.
+        if (_input == 0) {
+            revert("Input must not be zero");
+        }
+        value = _input;
+    }
+}
